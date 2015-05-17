@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:XamlAppForTesting="clr-namespace:XamlAppForTesting">
+    <SolidColorBrush x:Key="red" Color="Red" />
+    <DataTemplate x:Key="person" DataType="{x:Type XamlAppForTesting:Person}">
+        <Button x:Name="xxxHi">Hi</Button>
+    </DataTemplate>
+    <DataTemplate x:Key="employee" DataType="{x:Type XamlAppForTesting:Employee}">
+        <Button x:Name="xxxHo">Ho</Button>
+    </DataTemplate>
+    <DataTemplate x:Key="lifeform" DataType="{x:Type XamlAppForTesting:ILifeform}">
+        <Button x:Name="xxxHu">Hu</Button>
+    </DataTemplate>
+</ResourceDictionary>
