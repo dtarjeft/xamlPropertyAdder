@@ -1,4 +1,6 @@
-﻿namespace XAMLPropertyAdder
+﻿using System.Collections.Generic;
+
+namespace XAMLPropertyAdder
 {
     class Program
     {
@@ -21,7 +23,7 @@
             foreach (var result in dir.Results)
             {
                 var xml = new XmlParser(result, whites);
-                xml.Parse("_Test2");
+                xml.Parse("_Test2", new List<string>{"AutomationProperties.AutomationName", "AutomationProperties.AutomationId"});
             }
         }
     }
